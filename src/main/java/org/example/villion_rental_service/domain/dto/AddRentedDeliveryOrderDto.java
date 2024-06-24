@@ -20,24 +20,17 @@ public class AddRentedDeliveryOrderDto {
     private Long ownerUserId; // 책주인(대여받는 사람)(defalt)
     private Long renterUserId; // 대여하는 사람
 
-    // 배송 내역 정보
+    // 대여 정보
     private Long productId;
-    //    private String userName;
-//    private Long phoneNumber;
-//    private String address;
-//    private String deliveryMemo;
-    private LocalDate rentalStartDate; //  대여시작일
-    private LocalDate rentalEndDate; // 대여마감일
-    private Long totalRentalQuantity;
-    //    private Long shippingCost;
-    private Long totalRentalPrice;
-    //    private Long usedPoints;
-    private List<ProductEntity> orderList; // 주문 내역은 화면에서 받아서 보여주기 TODO  ProductEntity 이거 어떻게 해야할지 잘 모르겠음..
-
+    private LocalDate rentalStartDate; //  대여 시작일
+    private LocalDate rentalEndDate; // 대여 종료일
+//    private Long totalRentalQuantity;
+ // 주문 내역은 화면에서 받아서 보여주기
+//    private Long totalRentalPrice;
+//    private List<OrderDto> orderList;
 
     // 결제 내역 정보
     private PaymentMethod paymentMethod;
-
 
     // 도서 정보
     private String bookName;
