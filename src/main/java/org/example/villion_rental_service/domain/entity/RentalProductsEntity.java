@@ -1,5 +1,6 @@
 package org.example.villion_rental_service.domain.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,14 +13,15 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class rentalProductsEntity {
+public class RentalProductsEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long rentalProductsId;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "rental_id")
-    private RentalEntity rental;
+//    @ManyToOne
+//    @JoinColumn(name = "rentalId")
+//    @JsonIgnore
+//    private RentalEntity rental;
 
     private Long productId;
     private String productName;

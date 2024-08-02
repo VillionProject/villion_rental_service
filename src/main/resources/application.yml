@@ -1,5 +1,5 @@
 server:
-  port: 0
+  port: 9090
 
 spring:
   application:
@@ -11,7 +11,7 @@ spring:
     password: 1234
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     show-sql: true
     properties:
       hibernate:
