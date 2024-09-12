@@ -1,28 +1,14 @@
-//package org.example.villion_rental_service.service;
-//
-//import com.example.villion_rental_service.domain.dto.RentalDto;
-//import com.example.villion_rental_service.domain.entity.RentalEntity;
-//import com.example.villion_rental_service.domain.eunm.ProductGroup;
-//import com.example.villion_rental_service.domain.eunm.RentalStatus;
-//import com.example.villion_rental_service.domain.response.ResponseProductList;
-//import com.example.villion_rental_service.repository.RentalRepository;
-//import lombok.RequiredArgsConstructor;
-//import org.bouncycastle.math.raw.Mod;
-//import org.modelmapper.ModelMapper;
-//import org.modelmapper.convention.MatchingStrategies;
-//import org.modelmapper.internal.bytebuddy.implementation.bytecode.Throw;
-//import org.springframework.http.ResponseEntity;
-//import org.springframework.stereotype.Service;
-//
-//import java.time.LocalDateTime;
-//import java.util.Calendar;
-//import java.util.Collections;
-//import java.util.List;
-//
-//@Service
-//@RequiredArgsConstructor
-//public class RentalService {
-//    private final RentalRepository rentalRepository;
+package org.example.villion_rental_service.service;
+
+import lombok.RequiredArgsConstructor;
+import org.example.villion_rental_service.repository.RentalRepository;
+import org.springframework.stereotype.Service;
+
+@Service
+@RequiredArgsConstructor
+public class RentalService {
+    private final RentalRepository rentalRepository;
+
 //    public RentalDto addProduct(RentalDto rentalDto) {
 //
 //        ModelMapper mapper = new ModelMapper();
@@ -61,4 +47,4 @@
 //
 //        return rentalEntity;
 //    }
-//}
+}
