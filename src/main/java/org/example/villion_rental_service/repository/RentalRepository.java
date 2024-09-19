@@ -11,4 +11,6 @@ import java.util.List;
 @Repository
 public interface RentalRepository extends JpaRepository<RentalEntity, Long> {
     List<RentalEntity> findAllByRentalEndDateBefore(LocalDate localDate);
+
+    List<RentalEntity> findAllByRenterUserId(Long userId);
 }
